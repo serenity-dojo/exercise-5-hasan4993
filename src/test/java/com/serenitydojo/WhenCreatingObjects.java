@@ -32,6 +32,7 @@ public class WhenCreatingObjects {
 
         // TODO: implement a method in the Dog sound called feed() that sets the isFed variable to true:
          fido.feed();
+        System.out.println(fido.isFed());
 
         Assert.assertTrue(fido.isFed());
 
