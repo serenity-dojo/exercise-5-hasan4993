@@ -9,31 +9,31 @@ import static org.hamcrest.core.IsEqual.equalTo;
 public class WhenCreatingObjects {
     @Test
     public void creating_a_dog() {
-        Dog fido = new Dog("Fido", "Bone", 5);
-        Assert.assertEquals(fido.getName(), "Fido");
-        Assert.assertEquals(fido.getFavoriteToy(), "Bone");
-        Assert.assertEquals(fido.getAge(), 5);
+        Dog Kobe = new Dog("Kobe", "Bone", 5);
+        Assert.assertEquals(Kobe.getName(), "Kobe");
+        Assert.assertEquals(Kobe.getFavoriteToy(), "Bone");
+        Assert.assertEquals(Kobe.getAge(), 5);
     }
 
     @Test
     public void whenADogBarks() {
-        Dog fido = new Dog("Fido", "Bone", 5);
+        Dog Kobe = new Dog("Kobe", "Bone", 5);
 
         String dogSound = "";
         // TODO: implement a method in the Dog sound called makeNoise() that returns the sound a dog makes: "Woof", e.g.
-        dogSound = fido.makeNoise();
+        dogSound = Kobe.makeNoise();
 
         Assert.assertEquals(dogSound, "Woof");
     }
 
     @Test
     public void whenADogGetsFed() {
-        Dog fido = new Dog("Fido", "Bone", 5);
+        Dog Kobe = new Dog("Kobe", "Bone", 5);
 
         // TODO: implement a method in the Dog sound called feed() that sets the isFed variable to true:
-        fido.feed();
+        Kobe.feed();
 
-        Assert.assertTrue(fido.isFed());
+        Assert.assertTrue(Kobe.isFed());
 
     }
 
